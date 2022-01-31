@@ -1,0 +1,157 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --gray: #757575;
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 0px -100px;
+  background-size: contain;
+  background-color: var(--pale-blue);
+  font-family: "Red Hat Display", sans-serif;
+  display: grid;
+  grid-auto-rows: 1fr auto;
+  justify-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+p {
+  margin: 0px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 375px;
+  margin: 40px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.container > img {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.info-container {
+  display: grid;
+  gap: 20px;
+  text-align: center;
+  padding: 30px;
+}
+
+.info-container p {
+  color: var(--gray);
+}
+
+.btn {
+  padding: 0.8rem;
+  background-color: var(--bright-blue);
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: rgba(56, 42, 225, 0.1) 0px 19px 38px,
+    rgba(56, 42, 225, 0.1) 0px 15px 12px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.cancel {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--gray);
+  transition: 0.3s;
+}
+
+.cancel:hover {
+  color: #141414;
+}
+
+.plan {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--very-pale-blue);
+  border-radius: 10px;
+}
+
+.plan-text h2 {
+  font-size: 1rem;
+}
+
+.plan-text span {
+  color: var(--gray);
+  font-size: 0.9rem;
+  text-align: initial;
+}
+
+.plan a {
+  justify-self: end;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.plan a:hover {
+  opacity: 0.8;
+}
+
+.attribution {
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  .info-container p {
+    font-size: 0.8rem;
+  }
+
+  .plan-text h2 {
+    font-size: 0.7rem;
+  }
+
+  .plan-text span {
+    color: var(--gray);
+    font-size: 0.7rem;
+    text-align: initial;
+  }
+
+  .plan a {
+    font-weight: 600;
+    transition: 0.3s;
+    font-size: 0.6rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+  }
+
+  .cancel {
+    font-size: 0.8rem;
+  }
+}
