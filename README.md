@@ -9,7 +9,7 @@ link do projeto no Netlify: https://order-summary-rafaellore.netlify.app/
 ## Clonando o repositório :rocket:
 ```bash
 # Clone este repositório
-$ git clone https://github.com/rafaellore/portfolio-origamid.git
+$ git clone https://github.com/rafaellore/front-end-mentor-summary.git
 
 # Acesse a pasta do projeto e abra os arquivos na sua máquina!
 ```
